@@ -65,6 +65,27 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
                 }
                 console.log(typeof newFunc); // function
 
+/*
+Typeof val	                   Result
 
+Undefined	                "undefined"
+Null	                    "object"
+Boolean	                    "boolean"
+Number                  	"number"
+String                  	"string"
+
+Object                      "object"                    
+(native and does not implement [[Call]])	
+
+Object                      "function" 
+(native or host and does implement [[Call]])
+
+Object (host and does not implement [[Call]])	            
+                        Implementation-defined except may  not be "undefined", "boolean", "number", or "string".
+
+
+
+Ref: https://262.ecma-international.org/5.1/#sec-11.4.3                        
+*/
 
 
