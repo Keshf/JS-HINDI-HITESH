@@ -28,11 +28,43 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
 */
 
 /******************DATA TYPES**************************/
-console.log(typeof 34);         // number
-console.log(typeof 23.45);      // number
-console.log(typeof "tayyab");   // string
-console.log(typeof 'a');        // string
-console.log(typeof true);       // boolean
-console.log(typeof null);       // object
-console.log(typeof undefined);  // undefined
+// primitive types
+
+    // 1. number
+            console.log(typeof 34);   
+            console.log(typeof 23.45); 
+    // 2. bigint              
+            console.log(typeof 87523695693487n); 
+    // 3. string
+            console.log(typeof "tayyab"); 
+            console.log(typeof 'a');
+    //  4. boolean
+            console.log(typeof true); 
+    //  5. null
+            console.log(typeof null);       // object
+    //  6. undefined
+            console.log(typeof undefined);  // undefined
+    //  7. symbol
+            console.log(typeof Symbol);     // function
+            // Note: symbol is used to check uniquesness.
+
+
+// non-primitive (Reference) types
+    // Object 
+        // 1. Array
+                let arr = [1, "s", 3.5]
+                console.log(typeof arr); // object
+        // 2. Object
+                let newObj = {
+                    title: "OOPs",
+                    author: "Tayyab"}
+                    console.log(typeof newObj); // object
+        // 3. Function 
+                let newFunc = function (){
+                    console.log("");
+                }
+                console.log(typeof newFunc); // function
+
+
+
 
